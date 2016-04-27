@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simon says</string>
+    <string name="player1">Spieler 1</string>
+    <string name="player2">Spieler 2</string>
+    <string name="dialog_title">Ergebnis</string>
+    <string name="right">Richtig</string>
+    <string name="fail">Falsch</string>
+</resources>

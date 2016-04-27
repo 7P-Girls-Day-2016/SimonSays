@@ -23,13 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     private final static String TAG = MainActivity.class.getSimpleName();
 
-//    @Bind(R.id.redButton)     Button redButton;
-//    @Bind(R.id.greenButton)   Button greenButton;
-//    @Bind(R.id.yellowButton)  Button yellowButton;
-//    @Bind(R.id.blueButton)    Button blueButton;
-//    @Bind(R.id.newGameButton) Button newGameButton;
-//
-//    @Bind(R.id.playerLabel)   TextView playerLabelText;
+    // Buttons
+    // ToDo: define and initizialise buttons
 
     private StringBuffer colorsOfPlayer1;
     private StringBuffer colorsOfPlayer2;

@@ -4,10 +4,10 @@ package simonsays.sevenprinciples.com.simonsays;
  * Created by manuel on 26.04.16.
  */
 public enum Color {
-    RED('r', R.raw.red),
-    GREEN('g', R.raw.green),
-    YELLOW('y', R.raw.yellow),
-    BLUE('b', R.raw.blue);
+    RED('r', R.raw.johanna_lara_rot),
+    GREEN('g', R.raw.johanna_lara_gruen),
+    YELLOW('y', R.raw.johanna_lara_gelb),
+    BLUE('b', R.raw.johanna_lara_blau);
 
     private char firstLetter;
     private int soundFileResource;

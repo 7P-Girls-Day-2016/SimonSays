@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:gravity="center"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:layout_gravity="bottom"
+        android:background="@color/red"
+        android:tag="BLUE"
+        android:text="Gelb"/>
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:tag="RED"
+        android:text="Blau"/>
+
+    <Button
+        android:id="@+id/yellow"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/blue"
+        android:tag="YELLOW"
+        android:text="Grün"/>
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:background="@color/yellow"
+        android:tag="GREEN"
+        android:text="Rot"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/playerLabel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:gravity="center"
-        android:text="Hello Girls"
-        android:textSize="30dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="50dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Have you fun on Girls Day 2016?"
-        android:textSize="20dp"/>
 
-</LinearLayout>
+</RelativeLayout>

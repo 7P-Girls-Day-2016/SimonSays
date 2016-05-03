@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Buttons
     // ToDo: define and initizialise buttons
+    @Bind(R.id.red)
+    Button johähnchen;
 
     private StringBuffer colorsOfPlayer1;
     private StringBuffer colorsOfPlayer2;
@@ -39,34 +42,42 @@ public class MainActivity extends AppCompatActivity {
         //startNewGame();
     }
 
-//    // click on red, green, yellow, blue button
-//    @OnClick({R.id.redButton, R.id.greenButton, R.id.yellowButton, R.id.blueButton})
-//    protected void onCickButton(View view) {
-//        Log.d(TAG, view.getTag() + " button was clicked");
-//
-//        // get current color and play sound of them
-//        Color currentColor = Color.valueOf(view.getTag().toString());
-//        Sound.playSound(getApplicationContext(), currentColor.getSoundFileResource());
-//
-//        gameLogic();
-//    }
+    // click on red, green, yellow, blue button
+    @OnClick({R.id.yellow, R.id.green, R.id.blue, R.id.red})
+    protected void onCickButton(View view) {
+        Log.d(TAG, view.getTag() + " button was clicked");
 
-    private void gameLogic() {
-        // ToDo
+        // get current color and play sound of them
+        Color currentColor = Color.valueOf(view.getTag().toString());
+        Sound.playSound(getApplicationContext(), currentColor.getSoundFileResource());
+
+        gameLogic();
     }
 
-//    // click on new game button
-//    @OnClick(R.id.newGameButton)
-//    protected void clickOnNewGameButton(View view) {
-//        Log.d(TAG, "start new game");
-//        startNewGame();
-//    }
-//
-//    private void startNewGame() {
-//        colorsOfPlayer1 = new StringBuffer();
-//        colorsOfPlayer2 = new StringBuffer();
-//        playerLabelText.setText(R.string.player1);
-//    }
+    private void gameLogic(Color currentColor) {
+        if(colorsOfPlayer1.length() ==4) {
+            colorsOfPlayer2.append(currentColor.getFirstLetter());
+
+            if(colorsOfPlayer2.length()==4){
+                checkTheResult();
+
+
+            }
+        }
+    }
+
+    // click on new game button
+    @OnClick(R.id.newGameButton)
+    protected void clickOnNewGameButton(View view) {
+        Log.d(TAG, "start new game");
+        startNewGame();
+    }
+
+    private void startNewGame() {
+        colorsOfPlayer1 = new StringBuffer();
+        colorsOfPlayer2 = new StringBuffer();
+        playerLabelText.setText(R.string.player1);
+    }
 
     private void checkTheResult() {
         // Todo

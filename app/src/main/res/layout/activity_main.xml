@@ -1,25 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:gravity="center"
-              android:orientation="vertical">
+              android:layout_height="match_parent">
 
+
+
+    <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:background="@color/red"
+        android:text="Rot"
+        android:tag="RED"
+        android:id="@+id/RotButton" />
+
+ <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:background="@color/green"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Grün"
+        android:tag="GREEN"
+        android:id="@+id/GrünButton" />
+
+ <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:text="Blau"
+        android:tag="BLUE"
+        android:id="@+id/BlauButton" />
+
+ <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonWidth"
+        android:background="@color/yellow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Gelb"
+        android:tag="YELLOW"
+        android:id="@+id/GelbButton" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:gravity="center"
-        android:text="Hello Girls"
-        android:textSize="30dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="50dp"
+        android:id="@+id/playerLabel"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Have you fun on Girls Day 2016?"
-        android:textSize="20dp"/>
-
-</LinearLayout>
+</RelativeLayout>

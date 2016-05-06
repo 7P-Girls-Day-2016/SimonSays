@@ -1,54 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
-
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/RotButton"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonWidth"
         android:background="@color/red"
-        android:text="Rot"
         android:tag="RED"
-        android:id="@+id/RotButton" />
+        android:text="Rot"/>
 
- <Button
+    <Button
+        android:id="@+id/GrünButton"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonWidth"
-        android:background="@color/green"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:text="Grün"
+        android:background="@color/green"
         android:tag="GREEN"
-        android:id="@+id/GrünButton" />
+        android:text="Grün"/>
 
- <Button
+    <Button
+        android:id="@+id/BlauButton"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonWidth"
-        android:background="@color/blue"
         android:layout_alignParentBottom="true"
-        android:text="Blau"
+        android:background="@color/blue"
         android:tag="BLUE"
-        android:id="@+id/BlauButton" />
+        android:text="Blau"/>
 
- <Button
+    <Button
+        android:id="@+id/GelbButton"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonWidth"
-        android:background="@color/yellow"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Gelb"
+        android:background="@color/yellow"
         android:tag="YELLOW"
-        android:id="@+id/GelbButton" />
+        android:text="Gelb"/>
 
     <TextView
+        android:id="@+id/playerLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textSize="50dp"
-        android:id="@+id/playerLabel"/>
+        android:textSize="50dp"/>
 
 </RelativeLayout>
